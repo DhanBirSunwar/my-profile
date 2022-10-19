@@ -6,8 +6,29 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    color: var(--white);
 }
+
+:root {
+    --primary: #A43E49;
+    --white: #FFFFFF;
+    --black: #242C31;
+    --black--100: #4B4849;
+    --black--200: #3F454A;
+
+}
+
+@layer components {
+    .page-scroll {
+        @apply overflow-y-scroll;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-0 bg-transparent;
+    }
+}
+
